@@ -1,0 +1,36 @@
+  .title {
+    text-align: center;
+    color: red;
+    margin: 20px;
+  }
+  img{
+      width: 200px;
+      height: 320px;
+      position: relative;
+      left: 1px;
+  }
+  .rom{
+      text-align: right;
+  }
+  h1,h2,h3{
+    direction: rtl;
+  }
+  h2{
+      color: green;
+  }
+  h3{
+      color: blue;
+  }
+  .book1 input{
+      position: relative;
+      right: 54px;
+  }
+  .book2{
+      position: absolute;
+      right: 327px;
+      top: 108px;
+  }
+  .book2 input{
+      position: relative;
+      right: 61px;
+  }

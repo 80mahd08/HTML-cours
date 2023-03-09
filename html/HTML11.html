@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            margin: 10px;
+            padding: 10px;
+        }
+        .password{
+            padding: 10px;
+            margin: 10px;
+        }
+        .name input {
+            position: absolute;
+            left: 127px;
+        }
+        .password input{
+            position: absolute;
+            left: 127px;
+        }
+        input[type="submit"]{
+            margin: 5px;
+            background-color: aqua;
+        }
+        input[type="reset"],input[type="submit"]{
+            background-color: aqua; 
+            border-radius: 14px;
+            width: 100px;
+            height: 30px;
+            position: relative;
+            left: 750px;
+            box-shadow: 0px 6px 14px aqua;  
+        }
+        input[type="color"],input[type="range"],input[type="number"]{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="" novalidate target="_blank">
+    <div class="name">
+        <label for="a1">name : </label>
+        <input minlength="10" maxlength="20" readonly value="mahdi" placeholder="input your name" required type="text" name="name" id="a1">
+    </div>
+    <hr>
+    <div class="password">
+        <label for="a2">password : </label>
+        <input value="142547" disabled required placeholder="input your complex password" type="password" name="password" id="a2">    
+    </div>
+    <hr>
+    <div class="hidden">
+        <input type="hidden" value="ckZSSSjcjchhx">
+    </div>
+    <div class="color">
+        <label for="a3">color : </label>
+        <input type="color" id="a3" name="color">
+
+    </div>
+    <hr>
+    <div class="range">
+        <label for="a4">range</label>
+        <input type="range" name="range" min="0" value="19" max="100" step="20">
+    </div>
+    <hr>
+    <div class="number">
+        <label for="a5">number</label>
+        <input autofocus read type="number" min="100" max="1000">
+    </div>
+    <hr>
+    <div class="file">
+        <label for="a6">download bottom</label>
+        <a href="../audio/Adele - Easy On Me (Live at the NRJ Awards 2021)(MP3_320K).mp3" download><input type="button" id="a6" value="download"></a>
+    </div>
+    <hr>
+    <div class="radio">
+        <label for="a7">famme : </label>
+        <input  value="famme" type="radio" name="b" id="a7">
+        <br>
+        <label for="a8">homme : </label>
+        <input type="radio" checked value="homme"  name="b" id="a8">
+    </div>
+    <hr>
+    <div class="best_sport">
+        <label for="a9">football</label>
+        <input type="checkbox" checked name="foot" id="a9" value="fooball">
+        <label for="a10">basketball</label>
+        <input type="checkbox" name="bas" id="a10">
+    </div>
+    <hr>
+    <div class="country">
+        <label for="a11">your country</label>
+        <select name="country" id="a11" multiple>
+            <optgroup label="arabic">
+                <option  value="tunisia">tunisia</option>
+                <option value="algeria">algeria</option>
+                <option value="egypt">egypt</option>    
+            </optgroup>
+            <optgroup label="euro">
+                <option selected value="france">france</option>
+                <option value="italy">italy</option>
+            </optgroup>
+        </select>
+    </div>
+    <hr>
+    <div class="subject">
+        <label for="a12"></label>
+        <textarea placeholder="enter a subject" name="subject" id="a12" cols="30" rows="10"></textarea>
+    </div>
+    <hr>
+    <div class="file">
+        <input type="file">
+    </div>
+    <hr>
+    <div class="search">
+        <label for="a13">search</label>
+        <input type="search" name="s1" id="a13">
+    </div>
+    <hr>
+    <div class="URL">
+        <label for="a14">URL</label>
+        <input type="url" name="url" id="a14">
+    </div>
+    <hr>
+    <div class="date">
+        <label for="a15">date</label>
+        <input type="date" name="date" id="a15">
+    </div>
+    <hr>
+    <div class="time">
+        <label for="a16">date</label>
+        <input type="time" name="time" id="a16">
+    </div>
+    <hr>
+    <div class="list">
+        <label for="a15">list</label>
+        <input list="programming" name="prog" >
+        <datalist id="programming">
+            <option value="python">
+            <option value="PHP">    
+            <option value="js">
+        </datalist>
+    </div>
+
+    <hr>
+    <input type="submit" value="submit"><input type="reset" value="reset">
+
+</form>
+</body>
+</html>
